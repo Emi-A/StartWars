@@ -1,0 +1,30 @@
+
+.horizontal-scroll-wrapper {
+  width: 300px;
+  height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.horizontal-scroll-wrapper > div {
+ height: 300px;
+  width: 100%;
+}
+
+.horizontal-scroll-wrapper {
+  
+  transform: rotate(-90deg);
+  transform-origin: right top;
+}
+
+.horizontal-scroll-wrapper > div {
+
+  transform: rotate(90deg);
+  transform-origin: right top;
+}
+
+.horizontal-scroll-wrapper {
+
+  transform:rotate(-90deg) translateY(-100px);
+
+}
