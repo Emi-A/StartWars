@@ -12,7 +12,6 @@ import { MoreInfoPersonajes } from "./views/moreInfoPersonajes";
 import { Navbar } from "./component/navbar";
 import { footer, Footer } from "./component/footer";
 
-//create your first component
 const Layout = () => {
 	const { store, actions } = useContext(Context);
 
