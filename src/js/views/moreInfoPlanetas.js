@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 
-export const PlanetasViews = () => {
+export const MoreInfoPlanetas = () => {
 	const params = useParams();
 	const { store, actions } = useContext(Context);
 	let info = store.planets[params.theid];

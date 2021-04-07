@@ -18,7 +18,9 @@ export const Navbar = () => {
 			</Link>
 			<div className="ml-auto,">
 				<Dropdown>
-					<Dropdown.Toggle className="btn btn-primary dropdown-toggle">Favoritos</Dropdown.Toggle>
+					<Dropdown.Toggle className="btn btn-primary dropdown-toggle">
+						Favoritos {store.favorites.length}
+					</Dropdown.Toggle>
 					<Dropdown.Menu>
 						<Dropdown.Item header className="text-primary">
 							PERSONAJES

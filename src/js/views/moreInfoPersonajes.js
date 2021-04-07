@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 
-export const PersonajesViews = () => {
+export const MoreInfoPersonajes = () => {
 	const params = useParams();
 	const { store, actions } = useContext(Context);
 	let info = store.people[params.theid];
@@ -33,9 +33,9 @@ export const PersonajesViews = () => {
 			<hr />
 			<div className="row align-items-center" style={{ color: "red" }}>
 				<div className="col">Name: {info.name}</div>
-				<div className="col">Birth year {info.birth_year}</div>
+				<div className="col">Birth year: {info.birth_year}</div>
 				<div className="col"> Gender: {info.gender}</div>
-				<div className="col"> Height {info.height}</div>
+				<div className="col"> Height: {info.height}</div>
 				<div className="col"> Skin color: {info.skin_color}</div>
 				<div className="col">Eyes color: {info.eye_color}</div>
 			</div>
